@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('_7nXvkUd0exmU296M');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_16xlfep', 'template_81plbiv', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body id="body"> 
+        
+        <div class="left-bar" id="left-bar">
+            <br><div class="bar1" id="bar" onclick="bar1click()"><p><span class="material-symbols-outlined">
+                home
+                </span></p></div></br>
+            <div class="bar2" id="bar2" onclick="bar2click()"><div class="menu"><span class="material-symbols-outlined">
+                menu_book
+                </span></div></div>
+
+                <div class="bar2mob" id="bar2mob" onclick="bar2clickmob()"><div class="menu"><span class="material-symbols-outlined">
+                    menu_book
+                </span></div></div>
+
+            <br><div class="bar3" id="bar3" onclick="bar3click()"><p><span class="material-symbols-outlined">
+                mail
+                </span></p></div></br>
+        </div>
+
+  <div class="mobmenu" id="menumob"><span class="material-symbols-outlined" onclick="mobmenuclick()">
+                menu_open
+                </span></div>
+            <div class="closemenu" id="closemenu"><span class="material-symbols-outlined" onclick="closemenuclick()">
+                close
+                </span></div>
+
+    <div class="startup" id="startup">
+        <div class="navbar">
+          
+            <div class="nav1" id="nav1" onclick="nav11()"><div class="navtxt" id="navtxt"><img src="yt.png"></div></div>
+            <div class="nav2" id="nav2" onclick="nav22()"><div class="navtxt2" id="navtxt2"><img src="instagram.png"></div></div>
+            <div class="nav3" id="nav3" onclick="nav33()"><div class="navtxt3" id="navtxt3"><img src="Twitter.png"></div></div>
+            <div class="nav4" id="nav4" onclick="nav44()"><div class="navtxt4" id="navtxt4"><img src="facebook.png"></div></div>
+        </div>
+
+    <div class="about-me" id="ab1">
+            <p>finished projects:</p>
+            <p>20+</p>
+        </div>
+
+        <div class="about-me2" id="ab2">
+            <p>RATING:</p>
+            <p>5 star</p>
+        </div>
+
+        <div class="about-me3" id="ab3">
+            <p>TRUSTED</p>
+           
+        </div>
+
+        <div class="about-me4" id="ab4">
+            <p>FAST AND ACTIVE</p>
+        </div>
+    </div>
+
+
+    <div class="projectsFolder" id="project">
+        
+        
+        <div class="down">
+            <img src="scroll.webp">
+        </div>
+
+        <div class="ski" id="ski">
+            <img src="ski.png" onclick="ski2()">
+        </div>
+
+        <div class="bit" id="bit" >
+            <img src="port1.PNG" onclick="port1()">
+        </div>
+
+        <div class="kk" id="kk" >
+            <img src="port_KK.PNG" onclick="kk2()">
+        </div>
+
+
+    </div>
+    
+
+    <div class="contactform" id="contactform">
+        <div class="emailtxt"><p>EMAIL CONTACT FORM</p></div>
+   <form id="contact-form">
+    <input type="hidden" name="contact_number">
+    <div class="form">
+    <br><label>Name</label></br></form>
+    <input type="text" name="user_name" id="user_name">
+    <br><label>Email</label></br>
+    <input type="email" name="email_id" id="email_id">
+    <br><label>Message</label></br>
+    <textarea name="message" id="message" required></textarea>
+    <br><input type="submit" value="Send" onclick="sendmsg()"></br>
+    </div>
+    <p>© 2020 UgandanNut. All rights reserved.</p>
+    </form>
+   </div> 
+
+
+        
+        <script src="app.js"></script>
+    </body>
+    </html>
+</body>
+</html>
