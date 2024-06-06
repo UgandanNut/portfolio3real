@@ -1,14 +1,3 @@
-function sendmsg(){
-    alert("message is sent")
-    emailjs.send("service_16xlfep","template_81plbiv",{
-    from_name: document.getElementById("user_name").value,
-    email_id: document.getElementById("email_id").value,
-    message: document.getElementById("message").value,
-    });}
-
-
-
-
 const menumob = document.getElementById("menumob");
 const closemenu = document.getElementById("closemenu");
 const leftbar = document.getElementById("left-bar");
@@ -228,3 +217,13 @@ function nav33(){
 function nav44(){
     window.location.href = "https://www.facebook.com/cruchyn.cruchyn.1/friends/"
 }
+
+function sendmsg(){
+    alert("message is sent")
+    emailjs.send("service_16xlfep","template_81plbiv",{
+    from_name: document.getElementById("user_name").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+    });}
+
+
